@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "80758dca40e75ba5",
+        "id": "2864ed803bfd3fc5",
         "type": "tabs",
         "children": [
           {
-            "id": "7af8f4b42b1e2d19",
+            "id": "b04edd274952ff69",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Test Note/This is only test.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Test Note/This is only test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Test Note/This is only test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Test Note/This is only test.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,13 +138,39 @@
       "graph:Open graph view": false
     }
   },
-  "active": "7af8f4b42b1e2d19",
+  "active": "b04edd274952ff69",
   "lastOpenFiles": [
-    "3 LIfe Lesson/Life Goal.md",
+    "1 Programming/RUST/Zero to mastery/128 Type Conversion TryFrom TryInto.md",
+    "1 Programming/RUST/Zero to mastery/127 Type Conversion From Into.md",
+    "1 Programming/RUST/Zero to mastery/126 Type Aliases.md",
+    "1 Programming/RUST/Zero to mastery/file attachment/Question Mark Operator.png",
+    "1 Programming/RUST/Zero to mastery/file attachment/Slicing with ranges.png",
+    "1 Programming/RUST/Zero to mastery/123 Arrays and Slices.md",
+    "1 Programming/RUST/Zero to mastery/124 Slice Pattern.md",
+    "1 Programming/RUST/Zero to mastery/file attachment/Slices - View Into An Array.png",
+    "Test Note/This is only test.md",
+    "1 Programming/RUST/Zero to mastery/file attachment",
+    "1 Programming/RUST/Zero to mastery/121 Match Guards and Binding.md",
+    "4 Templates/rust code insert.md",
+    "1 Programming/RUST/Zero to mastery/119 Typestate.md",
+    "4 Templates/programming template.md",
     "3 LIfe Lesson/How To Build Self Discipline - Marcus Aurelius (Stoicism).md",
+    "3 LIfe Lesson/Life Goal.md",
+    "1 Programming/RUST/Rust Welcome.md",
+    "1 Programming/RUST/Zero to mastery",
+    "4 Templates/note callouts.md",
+    "4 Templates/to do template.md",
+    "4 Templates/table template.md",
+    "4 Templates/warning callouts.md",
+    "new document.md",
+    "3 LIfe Lesson/Test 1.md",
+    "3 LIfe Lesson/Test 2.md",
+    "3 LIfe Lesson/Test1.md",
+    "2 Daily Note/Jul-21-2024.md",
+    "2 Daily Note/Untitled.md",
+    "4 Templates",
     "2 LIfe Lesson/z attachment/logging nvim.png",
     "2 LIfe Lesson/z attachment",
-    "Test Note/This is only test.md",
     "2 LIfe Lesson/#attachment/lola and Mame.png",
     "2 LIfe Lesson/#attachment",
     "lola and Mame.png",
@@ -164,23 +182,12 @@
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
-    "new document.md",
-    "2 Daily Note/Jul-21-2024.md",
     "3 Daily Note/Jul 21, 2024.md",
-    "1 Programming/RUST/Rust Welcome.md",
     "3 Daily Note/Jul 21,     2024.md",
     "3 Daily Note/2024-07-21.md",
     "zion andrea.jpg",
     "2 Daily Note",
-    "www.facebook.com.md",
-    "Test Note/Test Only.md",
-    "Test Note/Welcom here.md",
     "1 Programming",
-    "1 Programming/RUST",
-    "3 LIfe Lesson",
-    "Test Note",
-    "Welcome.md",
-    "LIfe Lesson/RUST/Rust Welcome.md",
-    "LIfe Lesson/RUST"
+    "1 Programming/RUST"
   ]
 }

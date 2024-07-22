@@ -1,4 +1,7 @@
 {
   "attachmentFolderPath": "./file attachment",
-  "vimMode": true
+  "vimMode": true,
+  "newFileLocation": "current",
+  "showLineNumber": true,
+  "alwaysUpdateLinks": true
 }
