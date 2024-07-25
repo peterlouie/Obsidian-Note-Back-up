@@ -83,3 +83,25 @@ let status = Status::from(legacy_interface());
 	- *Into* gets implemented automatically when *From* is implemented
 - The Question Mark operator will automatically use a *From* implementation to convert errors
 
+# Demo
+```rust
+#[derive(Debug)]
+struct Uppercase(String);
+
+impl From<String> for Uppercase {
+    fn from(data: String) -> Self {
+        Uppercase(data.to_uppercase())
+    }
+}
+
+impl From<&str> for Uppercase {
+    fn from(data: &str) -> Self {
+        Uppercase(data.to_uppercase())
+    }
+}
+
+fn main() {
+    let upper = Uppercase::from("lowercase");
+    println!("{:?}", upper.0);
+}
+```

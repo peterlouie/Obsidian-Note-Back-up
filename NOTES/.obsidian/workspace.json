@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "2864ed803bfd3fc5",
+        "id": "aa82dd3db5bc819f",
         "type": "tabs",
         "children": [
           {
-            "id": "b04edd274952ff69",
+            "id": "91741da021fafe27",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "1 Programming/RUST/Zero to mastery/145 Threading Deadlock.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "137b821b490732cf",
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "1 Programming/RUST/Zero to mastery/145 Threading Deadlock.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "1 Programming/RUST/Zero to mastery/145 Threading Deadlock.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "1 Programming/RUST/Zero to mastery/145 Threading Deadlock.md"
+              }
             }
           }
         ]
@@ -138,17 +147,34 @@
       "graph:Open graph view": false
     }
   },
-  "active": "b04edd274952ff69",
+  "active": "91741da021fafe27",
   "lastOpenFiles": [
+    "1 Programming/RUST/Zero to mastery/file attachment/Threaded Contention.png",
+    "1 Programming/RUST/Zero to mastery/145 Threading Deadlock.md",
+    "1 Programming/RUST/Zero to mastery/file attachment/Fixing Threaded Deadlock.png",
+    "1 Programming/RUST/Zero to mastery/file attachment/Threaded Deadlock Example.png",
+    "1 Programming/RUST/Zero to mastery/file attachment/Fix Deadlock.png",
+    "1 Programming/RUST/Zero to mastery/144 Shared Ownership Threads and Mutex.md",
+    "1 Programming/RUST/Zero to mastery/file attachment/Recursive Deadlock Example.png",
+    "1 Programming/RUST/Zero to mastery/file attachment/Arc Mutex Sample 2.png",
+    "1 Programming/RUST/Zero to mastery/file attachment/Arc Mutex Sample 1.png",
+    "1 Programming/RUST/Zero to mastery/141 Interior Mutability.md",
+    "1 Programming/RUST/Zero to mastery/file attachment/How mutex works.png",
+    "1 Programming/RUST/Zero to mastery/file attachment/Data Corruption.png",
+    "1 Programming/RUST/Zero to mastery/140 Shared Ownership Smart Pointer.md",
+    "Test Note/This is only test.md",
+    "1 Programming/RUST/Zero to mastery/file attachment/RefCell checked borrow.png",
+    "1 Programming/RUST/Zero to mastery/136 Parallel Execution Channels.md",
+    "1 Programming/RUST/Zero to mastery/133 Parallel Execution Threads.md",
+    "1 Programming/RUST/Zero to mastery/131 Numeric Primitives Limits and Type Conversion.md",
+    "1 Programming/RUST/Zero to mastery/132 Advance Closure.md",
+    "2 Daily Note/Untitled.md",
+    "2 Daily Note/Jul-21-2024.md",
     "1 Programming/RUST/Zero to mastery/128 Type Conversion TryFrom TryInto.md",
     "1 Programming/RUST/Zero to mastery/127 Type Conversion From Into.md",
     "1 Programming/RUST/Zero to mastery/126 Type Aliases.md",
-    "1 Programming/RUST/Zero to mastery/file attachment/Question Mark Operator.png",
-    "1 Programming/RUST/Zero to mastery/file attachment/Slicing with ranges.png",
     "1 Programming/RUST/Zero to mastery/123 Arrays and Slices.md",
     "1 Programming/RUST/Zero to mastery/124 Slice Pattern.md",
-    "1 Programming/RUST/Zero to mastery/file attachment/Slices - View Into An Array.png",
-    "Test Note/This is only test.md",
     "1 Programming/RUST/Zero to mastery/file attachment",
     "1 Programming/RUST/Zero to mastery/121 Match Guards and Binding.md",
     "4 Templates/rust code insert.md",
@@ -160,32 +186,14 @@
     "1 Programming/RUST/Zero to mastery",
     "4 Templates/note callouts.md",
     "4 Templates/to do template.md",
-    "4 Templates/table template.md",
-    "4 Templates/warning callouts.md",
-    "new document.md",
-    "3 LIfe Lesson/Test 1.md",
-    "3 LIfe Lesson/Test 2.md",
-    "3 LIfe Lesson/Test1.md",
-    "2 Daily Note/Jul-21-2024.md",
-    "2 Daily Note/Untitled.md",
     "4 Templates",
-    "2 LIfe Lesson/z attachment/logging nvim.png",
     "2 LIfe Lesson/z attachment",
-    "2 LIfe Lesson/#attachment/lola and Mame.png",
     "2 LIfe Lesson/#attachment",
-    "lola and Mame.png",
-    "2 LIfe Lesson/attachment/lola and Mame.png",
     "2 LIfe Lesson/attachment",
-    "2 LIfe Lesson/zion andrea.jpg",
     "Meta Attached File",
-    "eagle photo3.jpg",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
-    "3 Daily Note/Jul 21, 2024.md",
-    "3 Daily Note/Jul 21,     2024.md",
-    "3 Daily Note/2024-07-21.md",
-    "zion andrea.jpg",
     "2 Daily Note",
     "1 Programming",
     "1 Programming/RUST"
