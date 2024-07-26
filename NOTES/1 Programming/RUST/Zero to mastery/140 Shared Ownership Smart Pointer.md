@@ -10,7 +10,7 @@ Tags: #rust/smartpointer #rust/pointer #rust/Rc
 - Atomic reference counted = ***"Arc"*** 
 	- Safe to use with multiple threads
 
-![[Smart Pointer.png]]
+![[140 Smart Pointer.png]]
 
 ## Recap
 

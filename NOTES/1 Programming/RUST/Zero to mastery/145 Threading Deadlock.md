@@ -11,15 +11,15 @@ Tags: #rust/
 	- Recursing while taking a lock
 	- Locking the same lock twice
 
-![[Recursive Deadlock Example.png]]
+![[145 Recursive Deadlock Example.png]]
 
-![[Fix Deadlock.png]]
+![[145 Fix Deadlock.png]]
 
-![[Threaded Deadlock Example.png]]
+![[145 Threaded Deadlock Example.png]]
 
-![[Fixing Threaded Deadlock.png]]
+![[145 Fixing Threaded Deadlock.png]]
 
-![[Threaded Contention.png]]
+![[145 Threaded Contention.png]]
 
 ## Recap
 

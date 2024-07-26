@@ -13,13 +13,13 @@ Tags: #rust/signed #rust/unsigned #rust/conversion
 - 32bit & 64bit floating point
 
 ### Unsigned Integer
-![[Unsigned Integer.png]]
+![[131 Unsigned Integer.png]]
 
 ### Signed Integer
-![[SIgned Integer.png]]
+![[131 SIgned Integer.png]]
 
 ### Literal Numeric Annotations
-![[Literal Numeric Annotations.png]]
+![[131 Literal Numeric Annotations.png]]
 
 ### Conversion
 
@@ -42,13 +42,13 @@ let b = a as u8 + 20u16 as u8;
 	- Repeat until the value fits in the type
 - Alternatively: (Source value) *modulus* (Target max + 1)
 - This happens automatically when using *as* to convert
-![[Casting to less bits.png]]
+![[131 Casting to less bits.png]]
 
 ### Converting Floats to Integer
 - Float to integer is a *saturating conversion*
 	- The value will be clamped to the minimum or maximum of the target type
 - Decimal points are truncated/dropped
-![[floats to integer.png]]
+![[131 floats to integer.png]]
 
 ### Checked Casting
 ```rust

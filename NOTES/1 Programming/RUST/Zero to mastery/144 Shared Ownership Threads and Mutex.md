@@ -10,7 +10,7 @@ Tags: #rust/arc #rust/mutex
 	- Data can become corrupted easily
 		- Difficult to work with threads
 
-![[Data Corruption.png]]
+![[144 Data Corruption.png]]
 
 ## Synchronization
 
@@ -32,11 +32,11 @@ Tags: #rust/arc #rust/mutex
 - Use ***parking_lot*** create for a ***Mutex***
 	- Better API & performance than stdlib
 
-![[How mutex works.png]]
+![[144 How mutex works.png]]
 
-![[Arc Mutex Sample 1.png]]
+![[144 Arc Mutex Sample 1.png]]
 
-![[Arc Mutex Sample 2.png]]
+![[144 Arc Mutex Sample 2.png]]
 
 ## Recap
 

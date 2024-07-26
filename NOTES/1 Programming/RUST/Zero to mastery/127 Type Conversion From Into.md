@@ -73,7 +73,7 @@ let status = Status::from(legacy_interface());
 - Use *Type::from()* when:
 	- Important to know the resulting type
 
-![[Question Mark Operator.png]]
+![[127 Question Mark Operator.png]]
 
 # Recap
 

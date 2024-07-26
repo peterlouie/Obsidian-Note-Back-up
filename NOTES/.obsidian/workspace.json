@@ -4,18 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "aa82dd3db5bc819f",
+        "id": "0e23999750012479",
         "type": "tabs",
         "children": [
           {
-            "id": "91741da021fafe27",
+            "id": "8c94fb7cb9e14e99",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1 Programming/RUST/Zero to mastery/145 Threading Deadlock.md",
+                "file": "1 Programming/RUST/Zero to mastery/151 Implementing Iterators.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "cd16341bfc3b9967",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "1 Programming/RUST/Zero to mastery/file attachment/131 SIgned Integer.png"
               }
             }
           }
@@ -69,8 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 475.5
   },
   "right": {
     "id": "137b821b490732cf",
@@ -86,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1 Programming/RUST/Zero to mastery/145 Threading Deadlock.md",
+                "file": "1 Programming/RUST/Zero to mastery/151 Implementing Iterators.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1 Programming/RUST/Zero to mastery/145 Threading Deadlock.md",
+                "file": "1 Programming/RUST/Zero to mastery/151 Implementing Iterators.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1 Programming/RUST/Zero to mastery/145 Threading Deadlock.md"
+                "file": "1 Programming/RUST/Zero to mastery/151 Implementing Iterators.md"
               }
             }
           }
@@ -147,45 +156,45 @@
       "graph:Open graph view": false
     }
   },
-  "active": "91741da021fafe27",
+  "active": "8c94fb7cb9e14e99",
   "lastOpenFiles": [
-    "1 Programming/RUST/Zero to mastery/file attachment/Threaded Contention.png",
-    "1 Programming/RUST/Zero to mastery/145 Threading Deadlock.md",
-    "1 Programming/RUST/Zero to mastery/file attachment/Fixing Threaded Deadlock.png",
-    "1 Programming/RUST/Zero to mastery/file attachment/Threaded Deadlock Example.png",
-    "1 Programming/RUST/Zero to mastery/file attachment/Fix Deadlock.png",
-    "1 Programming/RUST/Zero to mastery/144 Shared Ownership Threads and Mutex.md",
-    "1 Programming/RUST/Zero to mastery/file attachment/Recursive Deadlock Example.png",
-    "1 Programming/RUST/Zero to mastery/file attachment/Arc Mutex Sample 2.png",
-    "1 Programming/RUST/Zero to mastery/file attachment/Arc Mutex Sample 1.png",
-    "1 Programming/RUST/Zero to mastery/141 Interior Mutability.md",
-    "1 Programming/RUST/Zero to mastery/file attachment/How mutex works.png",
-    "1 Programming/RUST/Zero to mastery/file attachment/Data Corruption.png",
-    "1 Programming/RUST/Zero to mastery/140 Shared Ownership Smart Pointer.md",
-    "Test Note/This is only test.md",
-    "1 Programming/RUST/Zero to mastery/file attachment/RefCell checked borrow.png",
-    "1 Programming/RUST/Zero to mastery/136 Parallel Execution Channels.md",
-    "1 Programming/RUST/Zero to mastery/133 Parallel Execution Threads.md",
     "1 Programming/RUST/Zero to mastery/131 Numeric Primitives Limits and Type Conversion.md",
-    "1 Programming/RUST/Zero to mastery/132 Advance Closure.md",
-    "2 Daily Note/Untitled.md",
-    "2 Daily Note/Jul-21-2024.md",
     "1 Programming/RUST/Zero to mastery/128 Type Conversion TryFrom TryInto.md",
     "1 Programming/RUST/Zero to mastery/127 Type Conversion From Into.md",
     "1 Programming/RUST/Zero to mastery/126 Type Aliases.md",
     "1 Programming/RUST/Zero to mastery/123 Arrays and Slices.md",
+    "1 Programming/RUST/Zero to mastery/121 Match Guards and Binding.md",
+    "1 Programming/RUST/Zero to mastery/119 Typestate.md",
+    "1 Programming/RUST/Zero to mastery/151 Implementing Iterators.md",
+    "1 Programming/RUST/Zero to mastery/file attachment/131 SIgned Integer.png",
+    "1 Programming/RUST/Zero to mastery/file attachment/127 Question Mark Operator.png",
+    "1 Programming/RUST/Zero to mastery/file attachment/131 Literal Numeric Annotations.png",
+    "1 Programming/RUST/Zero to mastery/file attachment/131 floats to integer.png",
+    "1 Programming/RUST/Zero to mastery/file attachment/131 Casting to less bits.png",
+    "1 Programming/RUST/Zero to mastery/150 Stdlib Operator Overloading.md",
+    "1 Programming/RUST/Zero to mastery/file attachment/151 Iterators for..in.png",
+    "1 Programming/RUST/Zero to mastery/file attachment/151 Iterator Trait.png",
+    "1 Programming/RUST/Zero to mastery/file attachment/151 Iterator Example.png",
+    "1 Programming/RUST/Zero to mastery/file attachment/151 Iterator code.png",
+    "1 Programming/RUST/Zero to mastery/file attachment/150 Overloading example code.png",
+    "1 Programming/RUST/Zero to mastery/149 Equality and Ordering Comparing Struct.md",
+    "1 Programming/RUST/Zero to mastery/148 Equality and Ordering Comparing Enums.md",
+    "1 Programming/RUST/Zero to mastery/145 Threading Deadlock.md",
+    "1 Programming/RUST/Zero to mastery/144 Shared Ownership Threads and Mutex.md",
+    "1 Programming/RUST/Zero to mastery/141 Interior Mutability.md",
+    "1 Programming/RUST/Zero to mastery/140 Shared Ownership Smart Pointer.md",
+    "1 Programming/RUST/Zero to mastery/136 Parallel Execution Channels.md",
+    "1 Programming/RUST/Zero to mastery/133 Parallel Execution Threads.md",
+    "1 Programming/RUST/Zero to mastery/132 Advance Closure.md",
+    "Test Note/This is only test.md",
+    "2 Daily Note/Untitled.md",
+    "2 Daily Note/Jul-21-2024.md",
     "1 Programming/RUST/Zero to mastery/124 Slice Pattern.md",
     "1 Programming/RUST/Zero to mastery/file attachment",
-    "1 Programming/RUST/Zero to mastery/121 Match Guards and Binding.md",
     "4 Templates/rust code insert.md",
-    "1 Programming/RUST/Zero to mastery/119 Typestate.md",
     "4 Templates/programming template.md",
     "3 LIfe Lesson/How To Build Self Discipline - Marcus Aurelius (Stoicism).md",
-    "3 LIfe Lesson/Life Goal.md",
-    "1 Programming/RUST/Rust Welcome.md",
     "1 Programming/RUST/Zero to mastery",
-    "4 Templates/note callouts.md",
-    "4 Templates/to do template.md",
     "4 Templates",
     "2 LIfe Lesson/z attachment",
     "2 LIfe Lesson/#attachment",

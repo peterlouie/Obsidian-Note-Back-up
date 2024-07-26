@@ -21,7 +21,7 @@ Tags: #rust/array #rust/slices
 	- Cannot go out of bounds of the initial slice
 - Can create any number of subslices from an existing slice
 
-![[Slices - View Into An Array.png]]
+![[123 Slices - View Into An Array.png]]
 
 # Slices & Vectors
 
@@ -36,7 +36,7 @@ func(&number);
 let number: &[u8] = numbers.as_slice();
 ```
 
-![[Slicing with ranges.png]]
+![[123 Slicing with ranges.png]]
 
 First example is inclusive range
 Second example is exclusive range

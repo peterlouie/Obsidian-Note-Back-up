@@ -22,7 +22,7 @@ Tags: #rust/mutability #rust/cell #rust/refcell
 		- Limit to numbers and booleans
 - Prefer ***mut*** 
 
-![[Cell.png]]
+![[141 Cell.png]]
 
 ---
 
@@ -38,14 +38,14 @@ Tags: #rust/mutability #rust/cell #rust/refcell
 - Prefer ***&mut*** 
 - Not thread-safe
 
-![[RefCell Borrow.png]]
+![[141 RefCell Borrow.png]]
 
-![[RefCell Mutation.png]]
+![[141 RefCell Mutation.png]]
 
 >[!note] Note!
 >Using curly bracket can remove panic error or use checked borrow
 
-![[RefCell checked borrow.png]]
+![[141 RefCell checked borrow.png]]
 
 ### Recap
 

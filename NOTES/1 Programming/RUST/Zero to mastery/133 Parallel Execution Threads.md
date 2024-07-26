@@ -26,9 +26,9 @@ Tags: #rust/thread
 	- Ensures that the thread has completed
 
 ### Non deterministic behavior
-![[Thread Execution.png]]
+![[133 Thread Execution.png]]
 
-![[Thread Lifetime.png]]
+![[133 Thread Lifetime.png]]
 
 ## Thread Memory
 
