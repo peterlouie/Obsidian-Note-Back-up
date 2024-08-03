@@ -10,17 +10,118 @@ Tags: #rust/
 	- Using multiple locks
 	- Recursing while taking a lock
 	- Locking the same lock twice
+#### Recursive Deadlock Example
+```rust
+use parking_lot::Mutex;
 
-![[145 Recursive Deadlock Example.png]]
+fn recurse(
+	data: Rc<Mutex<u32>>,
+	remaining: usize,
+) -> usize {
+	let mut locked = data.lock();
+	match remaining {
+		rem if rem == 0 => 0,
+		rem => recurse(Rc::clone(&data), rem - 1),
+	}
+}
+```
+#### Fix Deadlock - ReentrantMutex
+```rust
+use parking_lot::ReentrantMutex;
 
-![[145 Fix Deadlock.png]]
+fn recurse(
+	data: Rc<ReentrantMutex<u32>>,
+	remaining: usize,
+) -> usize {
+	let mut locked = data.lock();
+	match remaining {
+		rem if rem == 0 => 0,
+		rem => recurse(Rc::clone(&data), rem - 1),
+	}
+}
+```
+#### Threaded Deadlock Example
+```rust
+use parking_lot::Mutex;
 
-![[145 Threaded Deadlock Example.png]]
+type ArcAccount = Arc<Mutex<Account>>;
 
-![[145 Fixing Threaded Deadlock.png]]
+struct Account {
+	balance: i64,
+}
 
-![[145 Threaded Contention.png]]
+fn transfer(from: ArcAccount, to: ArcAccount, amount: i64) {
+	let mut from = from.lock();
+	let mut to = to.lock();
+	from.balance -= amount;
+	to.balance += amount
+}
 
+fn main() {
+	let t1 = thread::spawn(move || {
+		transfer(a, b, 500)
+	});
+
+	let t2 = thread::spawn(move || {
+		transfer(a, b, 800)
+	});
+}
+```
+
+#### Fix Deadlock - Retry On Failure
+```rust
+use parking_lot::Mutex;
+
+type ArcAccount = Arc<Mutex<Account>>;
+
+struct Account {
+	balance: i64,
+}
+
+fn transfer(from: ArcAccount, to: ArcAccount, amount: i64) {
+	loop {
+		if let Some(mut from) = from.try_lock() {
+			if let Some(mut to) = to.try_lock() {
+				from.balance -= amount;
+				to.balance += amount;
+				return;
+			}
+		}
+		thread::sleep(Duration::from_mills(2));
+	}
+	}
+
+fn main() {
+	let t1 = thread::spawn(move || {
+		transfer(a, b, 500)
+	});
+
+	let t2 = thread::spawn(move || {
+		transfer(a, b, 800)
+	});
+}
+```
+
+#### Thread Contention
+```rust
+use backoff::ExponentialBackoff;
+
+fn transfer(from: ArcAccount, to: ArcAccount, amount: i64) {
+	let op = || {
+		if let Some(mut to) = from.try_lock() {
+			if let Some(mut to) = to.try_lock() {
+				from.balance -= amount;
+				to.balance += amount;
+				return Ok(());
+			}
+		}
+		Err(0)?
+	};
+	let backoff = ExponentialBackoff::default();
+	backoff::retry(backoff, op);
+}
+
+```
 ## Recap
 
 - Deadlocks are permanently stuck locks

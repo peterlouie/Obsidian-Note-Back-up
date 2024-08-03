@@ -12,20 +12,97 @@ Tags: #rust/
 		- Provides ordering: greate/less than
 - ***PartialOrd*** requires ***PartialEq*** to be implemented
 
-![[149 PartialEq Struct.png]]
+#### PartialEq Struct Example
+```rust
+#[derive(PartialEq)]
+struct User {
+	id: i32,
+	name: String,
+}
 
-![[149 PartialOrd Struct.png]]
+fn main() {
+	let a = User { id: 1, name: "a".to_owned() };
+	let b = User { id: 2, name: "b".to_owned() };
 
+	if a == b {
+		println!("equal")
+	}else{
+		println!("not equal")
+	}
+
+	//will print not equal
+}
+```
+
+#### PartialOrd Struct Example
+```rust
+#[derive(PartialEq, PartialOrd)]
+struct User {
+	id: i32,
+	name: String,
+}
+
+fn main() {
+	let a = User { id: 1, name: "a".to_owned() };
+	let b = User { id: 2, name: "b".to_owned() };
+
+	if a < b {
+		println!("less than")
+	}else{
+		println!("greater than")
+	}
+
+	//will print less than
+}
+```
 ## PartiaIOrd
 
 - ***PartialOrd*** only considers the first struct field
 - Manual implementation needed to compare other fields
 	- Always ensure ***PartialOrd*** and ***PartialEq*** are consistent
+### PartialOrd Struct Manual Implementation
+ ```rust
+use std::cmp::Ordering
 
-![[149 PartialOrd Struct Manual Implementation1.png]]
+#[derive(PartialEq)]
+struct User {
+	id: i32,
+	name: String,
+}
 
-![[149 PartialOrd Struct Manual Implementation2.png]]
+impl PartialOrd for User {
+	fn partial_cmp(&self, other: &Self) -> Option<Ordering> {
+		if self.name < other.name {
+			Some(Ordering::Less)
+		} else if self.name > other.name {
+			Some(Ordering::Greater)
+		} else {
+			Some(Ordering::Equal)
+		}
+	}
+}
+```
 
+### PartialOrd Struct Manual Implementation
+```rust
+use std::cmp::Ordering
+
+#[derive(PartialEq)]
+struct User {
+	id: i32,
+	name: String,
+}
+
+impl PartialOrd for User {
+	fn partial_cmp(&self, other: &Self) -> Option<Ordering> {
+		// .cmp() is made available through
+		// #[derive(Ord)]
+			// Automatically derived on primitive types
+		Some(self.name.cmp(&other.name))
+	}
+}
+
+```
 ## Recap
 
 - Struct can be sorted and compared

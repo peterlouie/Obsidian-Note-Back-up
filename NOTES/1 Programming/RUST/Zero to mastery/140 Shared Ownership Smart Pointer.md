@@ -10,7 +10,36 @@ Tags: #rust/smartpointer #rust/pointer #rust/Rc
 - Atomic reference counted = ***"Arc"*** 
 	- Safe to use with multiple threads
 
-![[140 Smart Pointer.png]]
+#### Smart Pointer
+```rust
+use std::rc::Rc;
+
+#[derive(debug)]
+struct Vehicle {
+	vin: String,
+}
+
+#[derive(debug)]
+struct Door {
+	vehicle: Rc<Vehicle>,
+}
+
+fn main() {
+	let car = Rc::new(Vehicle {
+		vin: "123".to_owned(),
+	})
+	
+	let left_door = Door {
+		vehicle: Rc::clone(&car),
+	}
+	
+	drop(car);
+	
+	println!("vehicle = {:?}", left_door.vehicle);
+	
+	//vehicle = Vehicle { vin: "123"}
+}
+```
 
 ## Recap
 

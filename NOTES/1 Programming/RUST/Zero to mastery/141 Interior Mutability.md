@@ -22,7 +22,34 @@ Tags: #rust/mutability #rust/cell #rust/refcell
 		- Limit to numbers and booleans
 - Prefer ***mut*** 
 
-![[141 Cell.png]]
+#### Cell
+```rust
+use std::cell::Cell;
+
+#[derive(Debug)]
+struct Book {
+	signed: Cell<bool>,
+}
+
+impl Book {
+	fn sign(&self) {
+		self.signed.set(true);
+	}
+	fn signed(&self) -> bool {
+		self.signed.get()
+	}
+}
+
+fn main(){
+	let my_book = Book {
+		signed: Cell::new(false),
+	};
+
+	println!("signed: {}", my_book.signed()); // signed: false
+	my_book.sign();
+	println!("signed: {}", my_book.signed()); // signed: true
+}
+```
 
 ---
 
@@ -38,15 +65,77 @@ Tags: #rust/mutability #rust/cell #rust/refcell
 - Prefer ***&mut*** 
 - Not thread-safe
 
-![[141 RefCell Borrow.png]]
+#### RefCell Borrow
+```rust
+use std::cell::RefCell;
 
-![[141 RefCell Mutation.png]]
+struct Person {
+	name: RefCell<String>,
+}
+
+fn main(){
+	let name = "Amy".to_owned();
+
+	let person = Person {
+		name: RefCell::new(name)
+	};
+
+	let name = person.name.borrow();
+
+	println!("{}", name) // Amy
+
+}
+```
+	
+#### Mutation
+```rust
+use std::cell::RefCell;
+
+struct Person {
+	name: RefCell<String>,
+}
+
+fn main() {
+	let name = "Amny".to_owned();
+	let person = Person {
+		name: RefCell::new(name),
+	};
+
+	{
+		let mut name = person.name.borrow_mut();
+		*name = "Tim".to_owned();
+	};
+
+	{
+		person.name.replace("Tim".to_owned());
+	};
+
+}
+
+// println! does not work here use dbg!
+```
 
 >[!note] Note!
 >Using curly bracket can remove panic error or use checked borrow
+#### Checked Borrow
+```rust
+use std::cell::RefCell;
 
-![[141 RefCell checked borrow.png]]
+struct Person {
+	name: RefCell<String>,
+}
 
+fn main() {
+	let name = "Amny".to_owned();
+	let person = Person {
+		name: RefCell::new(name),
+	};
+
+	let name: Result<_, _> = person.name.try_borrow();
+	let name: Result<_, _> = person.name.try_borrow_mut();
+}
+
+```
 ### Recap
 
 - ***Cell & RefCell*** allow permanent mutation

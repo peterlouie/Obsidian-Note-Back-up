@@ -10,14 +10,69 @@ Tags: #rust/
 	- Access to all iterator adapters
 		- ***map, take, filter,*** etc
 - Can be implemented for any structure
+### Iterator Trait
+```rust
+trait Iterator {
+	type Item;
+	fn next(&mut self) -> Option<Self::Item>;
+}
+```
+### Iterator Example
+```rust
+struct Odd {
+	number: isize,
+	max: isize,
+}
 
-![[151 Iterator Trait.png]]
+impl Iterator for Odd {
+	type Item = isize;
 
-![[151 Iterator Example.png]]
+	fn next(&mut self) -> Option<Self::Item> {
+		self.number += 2;
+		if self.number <= self.max {
+			Some(self.number)
+		} else {
+			None
+		}
+	}
+}
+```
 
-![[151 Iterator code.png]]
+### Iterator Example
+```rust
+impl Odd {
+	fn new(max: isize) -> Self {
+		Self { number: -1, max}
+	}
+}
 
-![[151 Iterators for..in.png]]
+let mut odds = Odd::new(7);
+
+println!("{:?}", odds.next());
+println!("{:?}", odds.next());
+println!("{:?}", odds.next());
+println!("{:?}", odds.next());
+println!("{:?}", odds.next());
+
+// Some(1)
+// Some(3)
+// Some(5)
+// Some(7)
+// None
+```
+
+ ```rust
+let mut odds = Odd::new(7);
+
+for o in odds {
+	println!("odd: {}", o);
+}
+
+// odd: 1
+// odd: 3
+// odd: 5
+// odd: 7
+```
 
 ## Recap
 

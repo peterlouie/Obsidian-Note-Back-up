@@ -1,6 +1,6 @@
 Time Created: 22 July 2024 21:20
 
-Tags: #rust/typeconversion #rust/frominto
+Tags: #rust/typeconversion #rust/frominto #rust/questionmark
 
 # From/Into
 
@@ -73,8 +73,30 @@ let status = Status::from(legacy_interface());
 - Use *Type::from()* when:
 	- Important to know the resulting type
 
-![[127 Question Mark Operator.png]]
+#### Question Mark Operator
+```rust
+struct Job;
 
+enum JobError {
+	Expired,
+	Missing
+	Other(u8)
+}
+
+fn execute_job(job: Job) -> Result<(), JobError> {
+	Err(2)?
+}
+
+impl From<u8> for JobError {
+	fn from(code: u8) -> Self {
+		match code {
+			1 => Self::Expired,
+			2 => Self::Missing,
+			c => Self::Other(c)
+		}
+	}
+}
+```
 # Recap
 
 - *From/Into* allow conversion between types

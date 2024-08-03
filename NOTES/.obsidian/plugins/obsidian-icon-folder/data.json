@@ -4,8 +4,9 @@
     "iconPacksPath": ".obsidian/icons",
     "fontSize": 16,
     "emojiStyle": "native",
-    "iconColor": null,
+    "iconColor": "#511976",
     "recentlyUsedIcons": [
+      "🤽",
       "LiSettings",
       "LiSmile",
       "LiClock",
@@ -32,8 +33,21 @@
     "lucideIconPackType": "native",
     "debugMode": false
   },
-  "1 Programming": "LiComputer",
-  "2 Daily Note": "LiClock",
-  "3 LIfe Lesson": "LiSmile",
-  "4 Templates": "LiSettings"
+  "1 Programming": {
+    "iconName": "LiComputer",
+    "iconColor": "#bba725"
+  },
+  "2 Daily Note": {
+    "iconName": "LiClock",
+    "iconColor": "#378628"
+  },
+  "3 LIfe Lesson": {
+    "iconName": "LiSmile",
+    "iconColor": "#cf18e7"
+  },
+  "4 Templates": {
+    "iconName": "LiSettings",
+    "iconColor": "#2a796c"
+  },
+  "Bridge Tutorial": "🤽"
 }

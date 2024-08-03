@@ -36,7 +36,49 @@ Tags: #rust/arc #rust/mutex
 
 ![[144 Arc Mutex Sample 1.png]]
 
-![[144 Arc Mutex Sample 2.png]]
+### Arc Mutex Example 1
+```rust
+use parking_lot::Mutex;
+use std::sync::Arc;
+
+struct Counter(usize);
+
+fn main() {
+	let counter = Counter(0);
+	let shared_counter = Arc::new(Mutex::new(counter));
+
+	let thread_1_counter = Arc::clone(&shared_counter);
+	let thread_2_counter = shared_counter.clone();
+}
+```
+#### Arc Mutex Example 2
+```rust
+use parking_lot::Mutex;
+use std::sync::Arc;
+
+struct Counter(usize);
+
+fn main() {
+	let counter = Counter(0);
+	let shared_counter = Arc::new(Mutex::new(counter));
+
+	let thread_1_counter = Arc::clone(&shared_counter);
+	let thread_2_counter = shared_counter.clone();
+
+	let thread_1 = thread::spawn(move || {
+		let mut counter = thread_1_counter.lock();
+		counter.0 += 1;
+	});
+
+	let thread_2 = thread::spawn(move || {
+		let mut counter = thread_2_counter.lock();
+		counter.0 += 1;
+	});
+
+	thread_1.join().and_then(|_| thread_2.join());
+	println!("{}", shared_counter.lock().0);
+}
+```
 
 ## Recap
 
