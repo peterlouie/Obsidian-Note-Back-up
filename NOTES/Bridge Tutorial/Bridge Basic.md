@@ -73,8 +73,3 @@ No Trump - Meaning no same cards on your hand
 
 ![[Respond to 1NT.png]]
 
-
-
-
-
-

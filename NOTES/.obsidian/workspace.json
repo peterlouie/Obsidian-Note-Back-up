@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1 Programming/RUST/Zero to mastery/152 Implementing IntoIterator.md",
+                "file": "Bridge Tutorial/Bridge Basic.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1 Programming/RUST/Zero to mastery/152 Implementing IntoIterator.md",
+                "file": "Bridge Tutorial/Bridge Basic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1 Programming/RUST/Zero to mastery/152 Implementing IntoIterator.md",
+                "file": "Bridge Tutorial/Bridge Basic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1 Programming/RUST/Zero to mastery/152 Implementing IntoIterator.md"
+                "file": "Bridge Tutorial/Bridge Basic.md"
               }
             }
           }
@@ -149,6 +149,12 @@
   },
   "active": "bb5803cd714a1e2e",
   "lastOpenFiles": [
+    "1 Programming/RUST/Zero to mastery/119 Typestate.md",
+    "Test Note/This is only test.md",
+    "1 Programming/RUST/Zero to mastery/123 Arrays and Slices.md",
+    "Bridge Tutorial/Learn Bridge NYC.md",
+    "Bridge Tutorial/Bridge Basic.md",
+    "1 Programming/RUST/Zero to mastery/152 Implementing IntoIterator.md",
     "1 Programming/RUST/Zero to mastery/file attachment/150 Overloading Operators.png",
     "1 Programming/RUST/Zero to mastery/149 Equality and Ordering Comparing Struct.md",
     "1 Programming/RUST/Zero to mastery/148 Equality and Ordering Comparing Enums.md",
@@ -161,12 +167,9 @@
     "1 Programming/RUST/Zero to mastery/file attachment/131 Unsigned Integer.png",
     "1 Programming/RUST/Zero to mastery/file attachment/131 SIgned Integer.png",
     "1 Programming/RUST/Zero to mastery/file attachment/131 Literal Numeric Annotations.png",
-    "1 Programming/RUST/Zero to mastery/file attachment/131 floats to integer.png",
-    "1 Programming/RUST/Zero to mastery/152 Implementing IntoIterator.md",
     "1 Programming/RUST/Zero to mastery/151 Implementing Iterators.md",
     "1 Programming/RUST/Zero to mastery/150 Stdlib Operator Overloading.md",
     "1 Programming/RUST/Zero to mastery/145 Threading Deadlock.md",
-    "Bridge Tutorial/Bridge Basic.md",
     "Bridge Tutorial/file attachment",
     "Bridge Tutorial",
     "1 Programming/RUST/Zero to mastery/144 Shared Ownership Threads and Mutex.md",
@@ -178,11 +181,8 @@
     "1 Programming/RUST/Zero to mastery/132 Advance Closure.md",
     "1 Programming/RUST/Zero to mastery/131 Numeric Primitives Limits and Type Conversion.md",
     "1 Programming/RUST/Zero to mastery/128 Type Conversion TryFrom TryInto.md",
-    "1 Programming/RUST/Zero to mastery/119 Typestate.md",
     "1 Programming/RUST/Zero to mastery/126 Type Aliases.md",
-    "1 Programming/RUST/Zero to mastery/123 Arrays and Slices.md",
     "1 Programming/RUST/Zero to mastery/121 Match Guards and Binding.md",
-    "Test Note/This is only test.md",
     "2 Daily Note/Untitled.md",
     "2 Daily Note/Jul-21-2024.md",
     "1 Programming/RUST/Zero to mastery/124 Slice Pattern.md",
